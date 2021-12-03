@@ -1,0 +1,11 @@
+:root{
+    --primary-color: #3E442B;
+    --secondary-color:#6A7062;
+    --tertiary-color: #8D909B;
+    --accent-color: #aasdc4;
+    --accent2-color: #D6EEFF;
+}
+
+body{
+    font-family: Montserrat, Arial, sans-serif;
+}
