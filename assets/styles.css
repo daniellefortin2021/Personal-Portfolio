@@ -143,6 +143,9 @@ section p{
 
 .portfolio{
     padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .portfolio-item{
@@ -153,19 +156,19 @@ section p{
 
 .featured-work{
     display: flex;
+    flex-direction: row;
     padding: 2%;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .featured-work img{
-    width: 50%;
-    margin: 10px;
+    width: 90%;
 }
 
 .featured-work-h3{
-    width: 75%;
     text-align: left;
-    margin-left: 5px;
     font-weight: bold;
     text-decoration: none;
     color: var(--primary-color)
@@ -175,9 +178,8 @@ section p{
     color:var(--secondary-color)
 }
 .featured-work-text{
-    width: 75%;
+    width: 100%;
     text-align: left;
-    margin-left: 10px;
 }
 
 .featured-work h4{
