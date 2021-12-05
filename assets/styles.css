@@ -6,8 +6,8 @@
 
 :root{
     --primary-color: #3E442B;
-    --secondary-color:#6A7062;
-    --tertiary-color: #8D909B;
+    --secondary-color:#c9c9ee;
+    --tertiary-color: #6a7062;
     --accent-color: #aaAdc4;
     --accent2-color: #D6EEFF;
 }
@@ -24,15 +24,24 @@ header{
     background-color: var(--secondary-color);
 }
 
-
+.logo{
+    width: 75px;
+}
 
 h1{
-    font-size: 40px;
-    color: var(--accent-color)
+    font-size: 55px;
+    color: var(--primary-color);
 }
 
 h2{
-    color: var(--primary-color)
+    color: var(--tertiary-color);
+    font-size: 30px;
+}
+
+.header-h3{
+    color: var(--tertiary-color);
+    font-size: 25px;
+    margin-bottom: 5px;
 }
 
 h3{
@@ -54,7 +63,27 @@ h3{
     width: 40%;
     height: auto;
     border-radius: 100%;
+}
 
+.hero-buttons{
+    margin: 5px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+    font-size: 1.05em;
+    text-decoration: none;
+}
+
+.hero-buttons:hover{
+    margin: 5px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-family: montserrat;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.05em;
 }
 
 .flex-row{
@@ -62,9 +91,10 @@ h3{
 }
 
 .about-me{
-    background-color: var(--tertiary-color);
+    background-color: white;
     text-align: center;
     padding: 5% 20%;
+
 }
 
 .about-me-header{
@@ -81,29 +111,136 @@ section p{
 
 .experience{
     padding: 5%;
+    background-color: var(--primary-color);
 }
+
+.h2-white{
+    color:white;
+}
+
 .expertise{
     display:flex;
 }
-.web-design{
+
+.icon{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.expertise-item{
     width: 35%;
-    background-color: var(--primary-color);
+    background-color: white; opacity: .75;
+    margin-top: 15px;
     padding: 3%;
-    color: white;
+    color: var(--primary-color);
     margin-right: 10px;
+    border: 2px solid;
+    border-radius: 25px;
 }
 
-.social-media{
-    width: 35%;
-    background-color: var(--primary-color);
-    padding: 3%;
-    color: white;
-    margin-right: 10px;
+.my-work{
+    display:flex;
+    margin-top: 40px;
 }
 
-.email-marketing{
-    width: 35%;
-    background-color: var(--primary-color);
-    padding: 3%;
+.portfolio{
+    padding: 5% 5%;
+}
+
+.portfolio-item{
+    width: 90%;
+}
+
+.featured-work{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+}
+
+.featured-work img{
+    width: 50%;
+    margin: 10px;
+}
+
+.featured-work-h3{
+    width: 75%;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+.featured-work-h3:hover{
+    color:var(--secondary-color)
+}
+.featured-work-text{
+    width: 75%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.featured-work h4{
+    color:var(--tertiary-color)
+}
+
+.contact{
+    background-color: var(--tertiary-color);
+    padding: 5% 20%;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin: 10px;
+    align-items: center;
+}
+
+.contact-text{
+    text-align: left;
+}
+
+.contact-text-block{
+    margin-top: 10px;
+}
+
+.contact-text-block h3{
+    font-weight: bold;
     color: white;
+    font-size: 25px;
+}
+
+.contact-text-block p{
+    font-size: 20px;
+}
+
+.contact-icons{
+    margin-top: 8px;
+    color: white;
+}
+
+.contact-icons:hover{
+    color:var(--secondary-color);
+}
+
+.contact-image{
+    width: 40%;
+    border-radius: 100%;
+}
+footer{
+    background-color: var(--secondary-color);
+    padding: 1%;
+    color: white;
+    display: flex;
+}
+.footer-text{ 
+    margin-right: 5px;
+}
+
+.footer-icons{
+    color:white;
+}
+.footer-icons:hover{
+    color:var(--primary-color);
 }
