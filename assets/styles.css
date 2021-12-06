@@ -50,9 +50,7 @@ h4{
     align-items: center;
 }
 .hero-hello{
-    width: 50%;
     padding: 5.5%;
-    padding-left: 8%;
 }
 
 .hero-hello h3{
@@ -62,9 +60,8 @@ h4{
 }
 .hero-image{
     width: 40%;
-    height: auto;
     border-radius: 100%;
-    margin-left: 50px;
+    margin: auto;
 }
 
 .hero-buttons{
@@ -122,6 +119,7 @@ section p{
 
 .expertise{
     display:flex;
+    flex-wrap: wrap;
 }
 
 .icon{
@@ -131,31 +129,38 @@ section p{
 }
 .expertise-item{
     width: 35%;
+    flex: 1;
     background-color: white; opacity: .75;
-    margin-top: 15px;
+    margin: 15px 10px 15px 10px ;
     padding: 3%;
     color: var(--primary-color);
-    margin-right: 10px;
     border: 2px solid;
     border-radius: 25px;
 }
 
 .my-work{
     display:flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
 .portfolio{
     padding: 5% 5%;
     display: flex;
+    flex: 1;
     justify-content: center;
     flex-direction: row;
 }
 
 .portfolio-item{
     width: 100%;
-    margin: 15px;
+    padding: 10px;
     text-align: center;
+    flex: 1;
+}
+
+.portfolio-item p {
+    padding: 10px;
 }
 
 .portfolio-item h3{
@@ -164,11 +169,8 @@ section p{
 
 .featured-work{
     display: flex;
-    flex-direction: row;
     padding: 2%;
     align-items: center;
-    justify-content: center;
-    width: 100%;
 }
 
 .featured-work img{
@@ -186,7 +188,6 @@ section p{
     color:var(--secondary-color)
 }
 .featured-work-text{
-    width: 100%;
     text-align: left;
 }
 
@@ -199,16 +200,8 @@ section p{
     padding: 5% 20%;
 }
 
-.contact-info{
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    margin: 10px;
-    align-items: center;
-}
-
 .contact-text{
-    text-align: left;
+    text-align: center;
 }
 
 .contact-text-block{
@@ -233,17 +226,13 @@ section p{
 .contact-icons{
     margin-top: 8px;
     color: white;
+    text-align: center;
 }
 
 .contact-icons:hover{
     color:var(--secondary-color);
 }
 
-.contact-image{
-    width: 40%;
-    border-radius: 100%;
-    margin-left: 30px;
-}
 footer{
     background-color: var(--secondary-color);
     padding: 1%;
@@ -256,7 +245,49 @@ footer{
 
 .footer-icons{
     color:white;
+    text-decoration: none;
 }
 .footer-icons:hover{
     color:var(--primary-color);
+}
+
+@media screen and (max-width: 980px) {
+    .header-h3{
+        text-align: left;
+    }
+
+    .featured-work img{
+        max-width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image{
+        width: 40%;
+        margin: auto;
+    }
+    
+    section{
+        padding: 30px 15px; 
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 575px){
+    .hero-image{
+        display: none;
+    }
+
+    .featured-work{
+        flex-direction: column;
+    }
+
+    .my-work{
+        flex-direction: column;
+    }
 }
