@@ -20,8 +20,5 @@ Hello and welcome to the code for my personal site!
 ## Website
 https://daniellefortin2021.github.io/Personal-Portfolio/
 
-## Contact 
-
-
 ## Contribution
-Made with ❤️ by Danielle FOrtin
+Made with ❤️ by Danielle Fortin
